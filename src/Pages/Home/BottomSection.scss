@@ -1,0 +1,158 @@
+.company-logos-section {
+  text-align: center;
+  padding: 90px;
+  background-color: white;
+
+  .centered-heading {
+    font-weight: 500;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 60px;
+  }
+
+  .company-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    img {
+      max-width: 146px;
+      height: 42px;
+      margin: 0 20px;
+    }
+  }
+}
+
+.testimonials-section {
+  text-align: center;
+  padding: 70px;
+
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 50px;
+  }
+
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .testimonial-card {
+      width: 300px;
+      padding: 20px;
+      background-color: #ffffff;
+      margin: 0 20px;
+      text-align: center;
+      border-radius: 8px;
+      transition: all 0.4s ease-in-out;
+      &:hover{
+          box-shadow: 0 0 12px rgba(0,0,0,0.4);
+        transform: translateY(-20px);
+      }
+
+      img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      h3 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+        width: 270px;
+      }
+
+      .rating {
+        font-size: 16px;
+        color: #f7b500;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+  
+@media screen and (max-width: 480px) {
+  .home1-page {
+    .centered-section {
+      text-align: center;
+      padding: 40px;
+    }
+  
+    .testimonials-section {
+      text-align: center;
+      padding: 70px;
+  
+      h2 {
+        font-size: 25px;
+        color: #333;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home1-page {
+    .custom-section {
+      text-align: center;
+      padding: 60px;
+      background-color: white;
+      width: 400px;
+    }
+    
+    .centered-paragraphs {
+      p{
+        color: rgb(32, 32, 32);
+        width: 230px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+    
+    .section-heading {
+      font-size: 24px;
+      margin-bottom: 20px;
+      line-height: 27px;
+    }
+    
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 20px;
+    }
+    
+    .card {
+      width: 210px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    
+    .card-logo {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+    
+    .card-heading {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  }
+}

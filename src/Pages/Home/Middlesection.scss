@@ -1,0 +1,203 @@
+.page-containers {
+  display: flex;
+  padding-top: 90px;
+  background-color: #f8f5ff;
+  padding-bottom: 4rem;
+
+  .left-sides {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    padding: 20px;
+
+    .upper-row,
+    .lower-row {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .card {
+      width: 270px;
+      height: 190px;
+      display: flex;
+      flex-direction: column;
+      background-color: #ffffff;
+      border-radius: 4px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      border-left: 5px solid #5c0e62;
+      user-select: none;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      .icon {
+        font-size: 24px;
+        margin-bottom: 10px;
+        width: 24px;
+        height: 24px;
+      }
+
+      .title {
+        width: 100%;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        user-select: none;
+      }
+
+      .description {
+        font-size: 14px;
+        color: black;
+        width: 90%;
+        user-select: none;
+      }
+    }
+  }
+
+  .right-sides {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    transition: transform 0.6s ease-in-out;
+    user-select: none;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    .title {
+      width: 347px;
+      height: 255px;
+      font-family: "Abril Fatface";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 50px;
+      letter-spacing: 0.04em;
+      color: #857885;
+
+      span {
+        color: #5c0e62;
+        font-family: "Abril Fatface";
+        font-style: normal;
+        font-weight: 800;
+        line-height: 50px;
+        letter-spacing: 0.04em;
+      }
+    }
+
+    .description {
+      margin-top: 10px;
+      font-family: "Abel";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.04em;
+      color: #857885;
+      width: 70%;
+    }
+
+    .button1 {
+      width: 97px;
+      left: 0px;
+      font-family: "Abril Fatface";
+      font-style: normal;
+      font-weight: 800;
+      border: none;
+      font-size: 18px;
+      line-height: 24px;
+      color: #5c0e62;
+      background-color: #f8f5ff;
+      margin-top: 10px;
+    }
+  }
+}
+
+/* Tablets and small desktop screens */
+@media screen and (max-width: 1080px) {
+  .page-containers {
+    flex-direction: row;
+    margin: 0 auto;
+
+    .left-sides .card {
+    }
+
+    .left-sides .upper-row,
+    .left-sides .lower-row {
+      gap: 1rem;
+    }
+
+    .right-sides .title {
+      height: auto;
+      width: 300px;
+    }
+  }
+  //   .left-sides {
+  //     width: 70%;
+  //   }
+
+  //   .right-sides {
+  //     width: 30%;
+  //   }
+  // }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+  .page-containers {
+    flex-direction: column;
+
+    .left-sides {
+      width: 100%;
+
+      .card {
+        height: auto;
+      }
+    }
+    .right-sides {
+      margin-left: 2rem;
+
+      .description{
+        margin-top: 20px;
+        width: 300px;
+      }
+      .button1{
+        margin-top: 20px;
+      }
+    }
+
+    .card {
+      height: 200px;
+    }
+  }
+}
+/* Mobile devices */
+@media screen and (max-width: 400px) {
+  .left-sides {
+    .lower-row,
+    .upper-row {
+      flex-direction: column;
+    }
+  }
+
+  .page-containers{
+
+    .right-sides {
+      .description{
+        line-height: 26px;
+        width: 300px;
+      }
+
+      .button1{
+        width: 100vw;
+        margin: 0 auto;
+      }
+  }
+
+  }
+}

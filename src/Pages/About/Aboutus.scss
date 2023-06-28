@@ -1,0 +1,172 @@
+.about-us-page {
+  display: flex;
+  // background-color: "#FAF8F6";
+  background-image: url("../../Assets/Images/bg.png");
+  background-size: cover;
+  background-color: white;
+
+  .left-side {
+    flex: 1;
+    padding: 20px;
+    margin-top: 150px;
+  }
+
+  h1 {
+    font-size: 64px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Kumbh Sans";
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+    line-height: 30px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  ul {
+    padding-left: 20px;
+    margin-bottom: 5rem;
+    color: white;
+    line-height: 30px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .right-side {
+    flex: 1;
+    padding: 20px;
+    margin-top: 90px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    .left-side,
+    .right-side {
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    p,
+    ul {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .left-side {
+      margin-top: 80px;
+
+      .quote {
+        margin-bottom: 20px;
+        font-size: 10px;
+        margin-top: 40px;
+      }
+    }
+    h1 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    ul {
+      font-size: 12px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: transparent;
+    }
+
+    .right-side {
+      flex: 1;
+      padding: 20px;
+      margin-top: 0;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+.company-logos-section {
+  text-align: center;
+  padding: 90px;
+  background-color: white;
+
+  .centered-heading {
+    font-weight: 500;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 60px;
+  }
+
+  .company-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;    
+    img {
+      max-width: 146px;
+      height: 42px;
+      margin: 0 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .company-logos-section {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+  
+    .centered-heading {
+      font-weight: 500;
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 60px;
+    }
+  
+    .company-logos {
+      display: flex;
+      justify-content: center;
+  
+      img {
+        max-width: 146px;
+        height: 42px;
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
