@@ -1,0 +1,128 @@
+.ProductDetailCard {
+  background-color: rgb(250, 244, 244);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  width: 400px;
+  margin-left: 4rem;
+
+  .productdetail__image {
+    img {
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    padding: 6px;
+  }
+  .prouct-info {
+    padding-left: 1.2rem;
+    margin-top: 0.5rem;
+    width: 100%;
+
+    .course__btn-box {
+      width: 100%;
+      .course__btn {
+        background-color: #9776ec;
+        padding: 1rem 5.8rem;
+        color: white;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+  .productdetail__price {
+    display: flex;
+    margin: 1rem 0 2rem;
+
+    h4 {
+      margin-right: 8px;
+    }
+  }
+
+  .course__include {
+    margin-top: 2.5rem;
+
+    h3 {
+      font-weight: bold;
+    }
+
+    .product__content {
+      padding-bottom: 1.5rem;
+      p {
+        color: black;
+        margin-left: 0.5rem;
+        margin-top: 0.5rem;
+
+        svg {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .ProductDetailCard {
+    margin-top: 10px;
+    width: 280px;
+    margin-left: 0;
+   
+    .productdetail__image {
+      img {
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      padding: 6px;
+    }
+    .prouct-info {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+      width: 100%;
+  
+      .course__btn-box {
+        margin-left: -10px;
+        width: 100%;
+        .course__btn {
+          background-color: #9776ec;
+          padding: 1rem 1.1rem;
+          color: white;
+          font-size: 18px;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+      }
+    }
+    .productdetail__price {
+      display: flex;
+      margin: 1rem 0 2rem;
+  
+      h4 {
+        margin-right: 8px;
+        font-size: 20px;
+      }
+    }
+  
+    .course__include {
+      margin-top: 2.5rem;
+  
+      h3 {
+        margin-right: 5px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+  
+      .product__content {
+        padding-bottom: 1.5rem;
+        
+        p {
+          color: black;
+          margin-left: 0;
+          margin-top: 0.5rem;
+          font-size: 15px;
+  
+          svg {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
